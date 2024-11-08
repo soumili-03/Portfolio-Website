@@ -31,10 +31,9 @@ const Extracurricular = () => {
   return (
     <div
       name="extracurricular"
-      className="scroll-mt-20 w-full h-full bg-gradient-to-b from-[#8dbbccc9] via-[#15779b7b] to-[#173039c9]"
-       //className="scroll-mt-20 w-full h-full bg-gradient-to-b from-[#8dbbccc9] via-[#15779b7b] to-[#173039c9] p-10 text-white"
+      className="w-full bg-gradient-to-b from-[#8dbbccc9] via-[#15779b7b] to-[#173039c9] py-10 pt-24"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Extracurricular Activities
@@ -50,12 +49,8 @@ const Extracurricular = () => {
               key={index}
               className="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-6 transition-shadow duration-300 hover:shadow-xl"
             >
-              <h3 className="text-2xl font-bold text-gray-800">
-                {activity.title}
-              </h3>
-              <p className="text-gray-700 italic font-semibold">
-                {activity.achievement}
-              </p>
+              <h3 className="text-2xl font-bold text-gray-800">{activity.title}</h3>
+              <p className="text-gray-700 italic font-semibold">{activity.achievement}</p>
               <p className="text-gray-800 mt-2 text-lg">{activity.description}</p>
             </div>
           ))}

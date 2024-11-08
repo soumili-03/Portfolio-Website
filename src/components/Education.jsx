@@ -19,10 +19,9 @@ const Education = () => {
   return (
     <div
       name="education"
-      //className="w-full h-full bg-gradient-to-b from-[#173039c9] via-[#5c8999c9] to-[#8dbbccc9]"
-      className="bg-gradient-to-b from-[#173039c9] via-[#5c8999c9] to-[#8dbbccc9] w-full h-screen"
+      className="bg-gradient-to-b from-[#173039c9] via-[#5c8999c9] to-[#8dbbccc9] w-full py-10 pt-24"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Education
@@ -35,9 +34,7 @@ const Education = () => {
               key={index}
               className="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-6 transition-shadow duration-300 hover:shadow-xl"
             >
-              <h3 className="text-2xl font-bold text-gray-800">
-                {item.degree}
-              </h3>
+              <h3 className="text-2xl font-bold text-gray-800">{item.degree}</h3>
               <p className="text-xl font-semibold text-gray-700">
                 {item.institution}
               </p>

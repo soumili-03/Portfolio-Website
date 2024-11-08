@@ -19,14 +19,14 @@ const Portfolio = () => {
       id: 2,
       src: ngologs,
       title: "NGO Logs",
-      description: "Designed a user-friendly GUI to streamline NGO search processes, especially aiding service-learning students for efficient searching of their preferred NGOs. ",
+      description: "Designed a user-friendly GUI to streamline NGO search processes, especially aiding service-learning students for efficient searching of their preferred NGOs.",
       githubLink: "https://github.com/soumili-03/NGOLogs",
     },
     {
       id: 3,
       src: Translation,
       title: "Headlines to Insights",
-      description: "Developed a GUI for extracting text from newspapers, summarizing it, and translating it from English to Marathi, aimed at providing rural Indians with remote access to global news. ",
+      description: "Developed a GUI for extracting text from newspapers, summarizing it, and translating it from English to Marathi, aimed at providing rural Indians with remote access to global news.",
       githubLink: "https://github.com/soumili-03/Headlines-to-Insights--Global-News-Summarized",
     },
     {
@@ -47,7 +47,7 @@ const Portfolio = () => {
       id: 6,
       src: soilmoisture,
       title: "Soil Moisture Detector",
-      description: "An IoT project that helps farmers monitor soil moisture remotely via a mobile application",
+      description: "An IoT project that helps farmers monitor soil moisture remotely via a mobile application.",
       githubLink: "https://github.com/soumili-03/IOT_based_Smart_Irrigation_System",
     },
   ];
@@ -55,7 +55,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-[#532d77] via-[#1e3a8a] to-black w-full text-white pt-16" // Added padding-top
+      className="bg-gradient-to-b from-[#532d77] via-[#1e3a8a] to-black w-full text-white pt-24 pb-10 scroll-mt-20"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
         <div className="pb-8">
@@ -68,7 +68,12 @@ const Portfolio = () => {
         <div className="flex flex-col gap-12">
           {portfolios.map(({ id, src, title, description, githubLink }) => (
             <div key={id} className="flex flex-col md:flex-row items-center gap-8">
-              <a href={githubLink} target="_blank" rel="noopener noreferrer" className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg shadow-gray-600 transition-transform duration-300 hover:scale-105">
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg shadow-gray-600 transition-transform duration-300 hover:scale-105"
+              >
                 <img
                   src={src}
                   alt={title}
