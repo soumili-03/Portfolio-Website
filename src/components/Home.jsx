@@ -13,7 +13,7 @@ const Home = () => {
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             <span className="text-[#7e2323] glow-text">Hi! I'm <span className="text-[#7e2323]">Soumili</span> Biswas</span>
-            <span className="block text-2xl sm:text-6xl text-gray-700 mt-2">Coder, Dreamer, Impact Enthusiast</span>
+            <span className="block text-2xl sm:text-6xl text-gray-700 mt-2">Coder, Dreamer, Lifelong Learner</span>
           </h2>
 
           <p className="text-gray-800 py-4 max-w-md">
@@ -27,7 +27,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-pink-900 to-pink-100 cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">

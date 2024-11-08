@@ -52,9 +52,8 @@ const Contact = () => {
               placeholder="Enter your name"
               value={formData.name}
               onChange={handleChange}
-              className={`p-2 bg-transparent border-2 rounded-md text-white focus:outline-none ${
-                errors.name ? "border-red-500" : "border-white"
-              }`}
+              className={`p-2 bg-transparent border-2 rounded-md text-white focus:outline-none ${errors.name ? "border-red-500" : "border-white"
+                }`}
             />
             {errors.name && <p className="text-red-500 text-sm">Name is required</p>}
 
@@ -64,9 +63,8 @@ const Contact = () => {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className={`my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none ${
-                errors.email ? "border-red-500" : "border-white"
-              }`}
+              className={`my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none ${errors.email ? "border-red-500" : "border-white"
+                }`}
             />
             {errors.email && <p className="text-red-500 text-sm">Email is required</p>}
 
@@ -76,18 +74,18 @@ const Contact = () => {
               rows="10"
               value={formData.message}
               onChange={handleChange}
-              className={`p-2 bg-transparent border-2 rounded-md text-white focus:outline-none ${
-                errors.message ? "border-red-500" : "border-white"
-              }`}
+              className={`p-2 bg-transparent border-2 rounded-md text-white focus:outline-none ${errors.message ? "border-red-500" : "border-white"
+                }`}
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm">Message is required</p>}
 
             <button
               type="submit"
-              className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+              className="text-white font-bold bg-gradient-to-b from-pink-500 to-pink-100 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
             >
               Let's talk
             </button>
+
           </form>
         </div>
       </div>

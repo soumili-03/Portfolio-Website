@@ -31,7 +31,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "soumili.biswas3183@gmail.com",
+      href: "mailto:soumili.biswas3183@gmail.com",
     },
     {
       id: 4,
@@ -47,32 +47,49 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
-      <ul>
-        {links.map(({ id, child, href, style, download }) => (
-          <li
-            key={id}
-            className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-pink-400" +
-              " " +
-              style
-
-              
-            }
-          >
-            <a
-              href={href}
-              className="flex justify-between items-center w-full text-white"
-              download={download}
-              target="_blank"
-              rel="noreferrer"
+    <>
+      {/* Desktop view */}
+      <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+        <ul>
+          {links.map(({ id, child, href, style, download }) => (
+            <li
+              key={id}
+              className={
+                "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-pink-400" +
+                " " +
+                style
+              }
             >
-              {child}
-            </a>
-          </li>
+              <a
+                href={href}
+                className="flex justify-between items-center w-full text-white"
+                download={download}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {child}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Mobile view */}
+      <div className="lg:hidden flex fixed bottom-0 left-0 w-full justify-evenly bg-pink-400 p-2">
+        {links.map(({ id, child, href, download }) => (
+          <a
+            key={id}
+            href={href}
+            className="flex flex-col items-center text-white"
+            download={download}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {child}
+          </a>
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
   );
 };
 
